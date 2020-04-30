@@ -77,3 +77,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Instructions (By LP)
+
+1. laravel new myproject
+2. git init and make the first commit
+3. Go to env and set database=sqlite and remove other db params
+4. Go to phpunit.xml and set the dbconnection in memory (in L7 is already configured)
+5. We'll create a test inside tests/Feature/MyNewTest.php
+6. On windows call the following command: call ./vendor/bin/phpunit.bat --filter NameOfMyTest
